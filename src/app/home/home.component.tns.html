@@ -1,5 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <ActionBar [title]="title"></ActionBar>
 <StackLayout  class="p-20">
-    <Label text="Welcome to {{ title }}!" class="h1 text-center" textWrap="true"></Label>
+    <Label text="Enter value to store" class="h1 text-center" textWrap="true" ></Label>
+    <text-field [(ngModel)]="cookieValue"></text-field>
+    <button text="Save" (tap)="SaveCookie()"></button>
+    <button text="Read" (tap)="ReadCookie()"></button>
 </StackLayout>
